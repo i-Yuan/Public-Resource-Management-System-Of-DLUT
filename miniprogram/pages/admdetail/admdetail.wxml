@@ -1,0 +1,16 @@
+<!--pages/admdetail/admdetail.wxml-->
+
+<view class='content'>
+    <view class='item'>
+      <text class='left'>学号：</text><text class='right'>{{result.student_id}}</text>
+    </view>
+    <view class='item'>
+      <text class='left'>姓名：</text><text class='right'>{{result.student_name}}</text>
+    </view>
+     <view class='item'>
+      <text class='left'>电话：</text><text class='right'>{{result.phone}}</text>
+    </view>
+     <view class='item'>
+      <text class='left'>申请理由：</text><text class='right'>{{result.text}}</text>
+    </view>
+</view>

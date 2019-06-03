@@ -1,0 +1,35 @@
+<!--pages/register/register.wxml-->
+<form bindsubmit='registSubmit'>
+  <view class="page">
+    <view class="page__bd page__bd_spacing">
+      <view class="userRegist">注册</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入姓名" name="name" value='{{form.name}}'/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">学号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入学号" name="id" value='{{form.id}}'/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">电话</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入电话号码" name="phone" value='{{form.phone}}'/>
+          </view>
+        </view>
+      </view>
+      <button class="weui-btn btn1" type="primary" form-type='submit'>注册</button>
+    </view>
+  </view>
+</form>

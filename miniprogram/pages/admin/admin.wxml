@@ -1,0 +1,12 @@
+<!--pages/admin/admin.wxml-->
+<view class="weui-panel__bd">
+  <view class="weui-media-box weui-media-box_text" wx:for="{{result}}" >
+    <view class="weui-media-box__title weui-media-box__title_in-text">{{item.classroom}}</view>
+    <view class="weui-media-box__desc">预约日期：{{item.date}} 预约时间：{{item.time_start}}-{{item.time_end}}</view>
+    <button class="weui-btn mini-btn" type="default" size="mini" id="{{item._id}}" bindtap='allow'>允许</button>
+    <button class="weui-btn mini-btn" type="default" size="mini" id="{{item._id}}" bindtap='deny'>拒绝</button>
+    <button class="weui-btn mini-btn" type="default" size="mini" bindtap="jumptodetail" id="{{item._id}}">详细信息</button>
+  </view>
+
+  
+</view>

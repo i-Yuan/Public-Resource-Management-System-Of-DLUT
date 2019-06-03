@@ -1,0 +1,29 @@
+<!--pages/detail/detail.wxml-->
+<form bindsubmit="formSubmit">
+<view class="top">
+  <text class="iconfont icon-liuyan"></text>
+  <image mode="widthFix" src="/images/cm2_list_detail_icn_cmt@2x.png"></image>
+</view>
+
+<view class="page_body">
+<view class="weui-btn-area">
+   
+  <picker class="weui-btn" mode="date" start="2019-01-01" value="{{date}}" end="2020-12-31" bindchange="bindDateChange" name="date">
+  <button type="default">预约日期: {{date}}</button>
+  </picker>
+  
+  
+  <picker class="weui-btn" mode="time" value="{{time_start}}" start="08:00" end="22:00" bindchange="bindStartTimeChange" name="time_start">
+  <button type="default">预约开始时间:{{time_start}}</button>
+  </picker>
+
+  <picker class="weui-btn" mode="time" value="{{time_end}}" start="08:00" end="22:00" bindchange="bindEndTimeChange" name="time_end">
+  <button type="default">预约结束时间: {{time_end}}</button>
+  
+  </picker>
+
+  </view>
+  <textarea bindinput="setTextarea" placeholder="请输入申请事由" name="text"/>
+  <button form-type="submit" class="send_btn f_28" >提交</button>
+</view>
+</form>

@@ -1,0 +1,7 @@
+<!--pages/msg/msg.wxml-->
+<view class="weui-panel__bd">
+  <view class="weui-media-box weui-media-box_text">
+    <view class="weui-media-box__title weui-media-box__title_in-text">4/11日更新</view>
+    <view class="weui-media-box__desc">加入了我的预约、信息接受的内容</view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<!--pages/mine/mine.wxml-->
+
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 
+  获取头像昵称 </button>
+  <block wx:else>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+
+<view class="block"></view>
+
+<view class="mid" hover-class="mebtn" hover-stay-time="100">
+  <view bindtap="JumpTomyinf" class="font" data-postName="1"> 我的信息
+    <image src="/images/geren.png" class="dui"></image>
+  </view>
+</view>
+
+<view class="me" hover-class="mebtn" hover-stay-time="100">
+  <view bindtap="JumpTomyres" class="font"> 我的预约信息
+    <image src="/images/collectHL.png" class="dui"></image>
+  </view>
+</view>
+
+<view class="block"></view>
+
+<view class="mid" hover-class="mebtn" hover-stay-time="100">
+  <view bindtap="JumpTomsg" class="font"> 消息
+    <image src="/images/comment2.png" class="dui"></image>
+  </view>
+</view>
+<!--这个按钮是给你跳进管理员界面的  实际上并没有-->
+<button class="weui-btn" bindtap="jump" wx:if="{{vip}}">管理员界面</button>
+
+<view class="weui-footer weui-footer_fixed-bottom">
+  <view class="weui-footer__links">
+  </view>
+  <view class="weui-footer__text">Copyright © 2008-2020 LZY</view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/myres/myres.wxml-->
+<view class="weui-panel__bd">
+  <view class="weui-media-box weui-media-box_text" wx:for="{{result}}">
+    <view class="weui-media-box__title weui-media-box__title_in-text">{{item.classroom}}</view>
+    <view class="weui-media-box__desc">预约日期：{{item.date}} 预约时间：{{item.time_start}}-{{item.time_end}} 
+    </view>
+    <button class="weui-btn mini-btn btn-black" type="default" size="mini" hover-class="none">{{item.state}}</button>
+  </view>
+</view>
